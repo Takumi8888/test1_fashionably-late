@@ -28,6 +28,7 @@
 .search-form__item-input {
     padding: 12px 20px;
     width: 30%;
+    outline: none;
     border: 1px solid #E3DED9;
     background-color: #FBFBFB;
     color: #BEB1A6;
