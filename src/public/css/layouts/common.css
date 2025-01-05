@@ -1,0 +1,45 @@
+.header {
+    background-color: #FFFFFF;
+}
+
+.header__inner {
+    position: relative;
+    margin: 0 auto;
+    width: 1512px;
+    height: 100px;
+    border-bottom: 1px solid #E0DFDE;
+}
+
+.header__logo {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    margin: 0 auto;
+    color: #8B7969;
+    font-family: 'Inika';
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+}
+
+.logout-form,
+.login-form {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 90%;
+    top: 50%;
+    width: 100px;
+    border: 1px solid #D9C6B5;
+    background-color: rgba(240, 240, 240, 0.6);
+}
+
+.header-nav__button {
+    width: 100%;
+    border: none;
+    color: #D9C6B5;
+    font-family: 'Inika';
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}

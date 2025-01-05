@@ -1,0 +1,131 @@
+.header {
+    background-color: #FFFFFF;
+}
+
+.header__inner {
+    position: relative;
+    margin: 0 auto;
+    width: 1512px;
+    height: 100px;
+    border-bottom: 1px solid #E0DFDE;
+}
+
+.header__logo {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    margin: 0 auto;
+    color: #8B7969;
+    font-family: 'Inika';
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+}
+
+.register-form {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 90%;
+    top: 50%;
+    width: 100px;
+    border: 1px solid #D9C6B5;
+    background-color: rgba(240, 240, 240, 0.6);
+}
+
+.header-nav__button {
+    width: 100%;
+    border: none;
+    color: #D9C6B5;
+    font-family: 'Inika';
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.login-form__content {
+    margin: 0 auto;
+    width: 1512px;
+    height: 882px;
+    background-color: #F1ECE7;
+}
+
+.login-form__heading {
+    width: 100%;
+}
+
+.login-form__heading h2 {
+    margin: 0 auto;
+    padding: 60px 0px;
+    color: #8B7969;
+    font-family: 'Inika';
+    font-weight: 400;
+    font-size: 35px;
+    text-align: center;
+}
+
+.login-form {
+    margin: 0px auto;
+    padding: 120px 150px;
+    padding-bottom: 80px;
+    width: 50%;
+    border: 1px solid #C5B9B0;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.login-form__group {
+    margin: 0px auto;
+}
+
+.login-form__group-title {
+    margin: 0px auto;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.login-form__label--item {
+    color: #8B7969;
+    font-family: 'Inika';
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.login-form__group-content {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.login-form__input--text input {
+    padding: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    background-color: #F4F4F4;
+    color: #BEB1A6;
+    font-family: 'Inika';
+    font-size: 14px;
+    appearance: none;
+}
+
+.login-form__error {
+    height: 20px;
+    color: #FF9494;
+    font-family: 'Inika';
+    text-align: left;
+}
+
+.login-form__button {
+    margin-top: 80px;
+}
+
+.login-form__button-submit {
+    padding: 8px 40px;
+    border: none;
+    border-radius: 3px;
+    background-color: #82756A;
+    color: #FFFFFF;
+    font-size: 20px;
+    cursor: pointer;
+}
