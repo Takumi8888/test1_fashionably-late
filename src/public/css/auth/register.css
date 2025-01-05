@@ -96,6 +96,7 @@
 .register-form__input--text input {
     padding: 20px;
     width: 100%;
+    outline: none;
     border: none;
     border-radius: 3px;
     background-color: #F4F4F4;
