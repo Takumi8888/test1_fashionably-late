@@ -4,7 +4,7 @@
 
 <p>Dockerビルド</p>
 <ol>
-  <li>git@github.com:Takumi8888/test_fashionably-late.git</li>
+  <li>git@github.com:Takumi8888/test1_fashionably-late.git</li>
   <li>docker-compose up -d --build</li>
   <li>sudo chmod -R 777 src/*</li>
 </ol>
