@@ -28,12 +28,6 @@ class Contact extends Model
         return $this->belongsTo(category::class);
     }
 
-    public function user()
-    {
-        return $this->belongsTo(user::class);
-    }
-
-
     /**
      * @param  Builder<User>  $query
      */
@@ -85,7 +79,4 @@ class Contact extends Model
             $query->orWhere('created_at', $created_at);
         }
     }
-
-
-
 }
