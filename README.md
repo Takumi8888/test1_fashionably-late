@@ -4,7 +4,9 @@
 
 <p>Dockerビルド</p>
 <ol>
-  <li>git@github.com:Takumi8888/test1_fashionably-late.git</li>
+  <li>git clone https://github.com/Takumi8888/test1_fashionably-late.git</li>
+  <li>cd test1_fashionably-late</li>
+  <li>git remote set-url origin git@github.com:Takumi8888/test1_fashionably-late.git</li>
   <li>docker-compose up -d --build</li>
   <li>sudo chmod -R 777 src/*</li>
 </ol>
@@ -13,10 +15,12 @@
 <p>Laravel環境構築</p>
 <ol>
   <li>docker-compose exec php bash</li>
-  <li>.env.example ファイルから.envを作成し、環境変数を変更</li>
+  <li>cp .env.example .env</li>
+  <li>chmod 777 .env</li>
+  <li>.envファイルの環境変数を変更（docker-compose.yml参照）</li>
   <li>composer update</li>
   <li>php artisan key:generate</li>
-  <li>php artisan migrate</li>
+  <li>php artisan migrate:fresh</li>
   <li>php artisan db:seed</li>
 </ol>
 
