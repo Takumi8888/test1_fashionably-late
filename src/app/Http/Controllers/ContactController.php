@@ -85,7 +85,6 @@ class ContactController extends Controller
     //Admin画面：リセットボタン → Admin画面表示
     public function adminIndex()
     {
-        $contacts = Contact::all();
         $categories = Category::all();
         $contacts = Contact::Paginate(7);
 
@@ -112,26 +111,12 @@ class ContactController extends Controller
         //単発での動作は確認できたが、複合すると検索できない
         $contacts = Contact::with('category')
             ->KeywordSearch($request->keyword)
-            // ->genderSearch($request->gender)
-            // ->categorySearch($request->category_id)
-            // ->dateSearch($request->created_at)
-            ->get();
-
-        //単発での動作は確認できたが、複合すると検索できない
-        // $contacts = Contact::with('category')
-            // ->firstNameAllSearch($request->keyword)
-            // ->firstNameSearch($request->keyword)
-            // ->lastNameAllSearch($request->keyword)
-            // ->lastNameSearch($request->keyword)
-            // ->emailAllSearch($request->keyword)
-            // ->emailSearch($request->keyword)
-            // ->genderSearch($request->gender)
-            // ->categorySearch($request->category_id)
-            // ->dateSearch($request->created_at)
-            // ->get();
+            ->genderSearch($request->gender)
+            ->categorySearch($request->category_id)
+            ->dateSearch($request->created_at)
+            ->Paginate(7);
 
         $categories = Category::all();
-        // $contacts = Contact::Paginate(7);
 
         return view('admin.index', compact('contacts', 'categories'));
     }
