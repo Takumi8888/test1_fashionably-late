@@ -79,4 +79,5 @@ class Contact extends Model
             $query->orWhere('created_at', $created_at);
         }
     }
+
 }
