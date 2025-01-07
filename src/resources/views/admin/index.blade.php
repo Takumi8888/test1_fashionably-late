@@ -87,8 +87,7 @@
         </div>
         {{-- ページネーション --}}
         <div class="admin__page">
-            {{-- {{$contacts->appends(request()->query())->links('vendor.pagination.bootstrap-4')}} --}}
-            {{-- {{ $contacts->links('vendor.pagination.bootstrap-4') }} --}}
+            {{ $contacts->links('vendor.pagination.bootstrap-4') }}
         </div>
     </div>
 
