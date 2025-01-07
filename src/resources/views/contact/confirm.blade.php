@@ -16,11 +16,11 @@
                 <tr class="confirm-table__row">
                     <th class="confirm-table__header">お名前</th>
                     <td class="confirm-table__text-name">
-                        <div class="form__input--first-name">
+                        <div class="form__input--last-name">
                             {{ $contacts['last_name'] }}
                             <input type="hidden" name="last_name" value="{{ $contacts['last_name'] }}" readonly />
                         </div>
-                        <div class="form__input--last-name">
+                        <div class="form__input--first-name">
                             {{ $contacts['first_name'] }}
                             <input type="hidden" name="first_name" value="{{ $contacts['first_name'] }}" readonly />
                         </div>
