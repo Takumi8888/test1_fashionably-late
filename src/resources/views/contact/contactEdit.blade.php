@@ -20,19 +20,19 @@
                     </th>
                     <td class="contact-table__item">
                         <div class="contact-form__input--name">
-                            <div class="contact-form__input--first-name">
-                                <input type="text" name="first_name" placeholder="例: 山田" value="{{ $contacts['first_name'] }}" />
-                            </div>
                             <div class="contact-form__input--last-name">
-                                <input type="text" name="last_name" placeholder="例: 太郎" value="{{ $contacts['last_name'] }}" />
+                                <input type="text" name="last_name" placeholder="例: 山田" value="{{ $contacts['last_name'] }}" />
+                            </div>
+                            <div class="contact-form__input--first-name">
+                                <input type="text" name="first_name" placeholder="例: 太郎" value="{{ $contacts['first_name'] }}" />
                             </div>
                         </div>
                         <div class="contact-form__error">
                             <ul class="contact-form__error--item">
-                                @error('first_name')
+                                @error('last_name')
                                     <li>{{ $message }}</li>
                                 @enderror
-                                @error('last_name')
+                                @error('first_name')
                                     <li>{{ $message }}</li>
                                 @enderror
                             </ul>
