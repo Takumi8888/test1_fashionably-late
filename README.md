@@ -14,6 +14,7 @@
 <ol>
   <li>docker-compose exec php bash</li>
   <li>.env.example ファイルから.envを作成し、環境変数を変更</li>
+  <li>composer update</li>
   <li>php artisan key:generate</li>
   <li>php artisan migrate</li>
   <li>php artisan db:seed</li>
