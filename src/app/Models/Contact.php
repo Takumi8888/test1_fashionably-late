@@ -45,64 +45,22 @@ class Contact extends Model
      * @return \Illuminate\Database\Eloquent\Builder
      */
 
+    // Keyword（first_name、last_name、email）
     public function scopeKeywordSearch(Builder $query, $keywords)
     {
-        // dd($keywords);
         if (!empty($keywords)) {
             $query->where(function ($query) use ($keywords) {
-                $query->where('first_name', 'like', '%' . $keywords . '%')
+                $query->Where('first_name', $keywords)
+                    ->orWhere('first_name', 'like', '%' . $keywords . '%')
+                    ->orWhere('last_name', $keywords)
                     ->orWhere('last_name', 'like', '%' . $keywords . '%')
+                    ->orWhere('email', $keywords)
                     ->orWhere('email', 'like', '%' . $keywords . '%');
             });
         }
-        // dd($query);
 
         return $query;
     }
-
-    // // // FirstName
-    // public function scopeFirstNameAllSearch(Builder $query, $keyword): void
-    // {
-    //     if(!empty($keyword)){
-    //         $query->where('first_name', $keyword);
-    //     }
-    // }
-
-    // public function scopeFirstNameSearch(Builder $query, $keyword): void
-    // {
-    //     if (!empty($keyword)) {
-    //         $query->where('first_name', 'like', '%' . $keyword . '%');
-    //     }
-    // }
-
-    // // LastName
-    // public function scopeLastNameAllSearch(Builder $query, $keyword): void
-    // {
-    //     if (!empty($keyword)) {
-    //         $query->where('last_name', $keyword);
-    //     }
-    // }
-
-    // public function scopeLastNameSearch(Builder $query, $keyword): void
-    // {
-    //     if (!empty($keyword)) {
-    //         $query->where('last_name', 'like', '%' . $keyword . '%');
-    //     }
-    // }
-    // // Email
-    // public function scopeEmailAllSearch(Builder $query, $keyword): void
-    // {
-    //     if (!empty($keyword)) {
-    //         $query->where('email', $keyword);
-    //     }
-    // }
-
-    // public function scopeEmailSearch(Builder $query, $keyword): void
-    // {
-    //     if (!empty($keyword)) {
-    //         $query->where('email', 'like', '%' . $keyword . '%');
-    //     }
-    // }
 
     // Gender
     public function scopeGenderSearch(Builder $query, $gender): void
