@@ -26,6 +26,6 @@ Route::POST('/thanks', [ContactController::class, 'store']);
 Route::POST('/', [ContactController::class, 'edit']);
 
 //Admin関連画面
-Route::POST('/admin/search', [ContactController::class, 'search']);
+Route::POST('/admin', [ContactController::class, 'search']);
 Route::POST('/contactExport', [ContactController::class, 'contactExport']);
 Route::POST('/logout', [ContactController::class, 'logout']);
