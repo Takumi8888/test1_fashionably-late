@@ -19,7 +19,7 @@
     <div class="admin__heading">
         <h2>Admin</h2>
     </div>
-    <form class="search-form">
+    <form class="search-form" action="/admin">
         @csrf
         <div class="search-form__group">
             {{-- 名前、メールアドレス --}}
@@ -48,11 +48,11 @@
             <input class="search-form__item-date" type="date">
             {{-- 検索 --}}
             <div class="search-button__search">
-                <button class="search-button__search--submit" type="submit" formaction="/admin/search" formmethod="POST">検索</button>
+                <button class="search-button__search--submit" type="submit" formmethod="POST">検索</button>
             </div>
             {{-- リセット --}}
             <div class="search-button__reset">
-                <button class="search-button__reset--submit" type="submit" formaction="/admin" formmethod="GET" >リセット</button>
+                <button class="search-button__reset--submit" type="submit" formmethod="GET">リセット</button>
             </div>
         </div>
     </form>
