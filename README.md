@@ -20,7 +20,7 @@
   <li>.envファイルの環境変数を変更（docker-compose.yml参照）</li>
   <li>composer update</li>
   <li>php artisan key:generate</li>
-  <li>php artisan migrate:fresh</li>
+  <li>php artisan migrate</li>
   <li>php artisan db:seed</li>
 </ol>
 
