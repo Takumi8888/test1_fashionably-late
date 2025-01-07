@@ -66,7 +66,7 @@ class Contact extends Model
     public function scopeGenderSearch(Builder $query, $gender): void
     {
         if (!empty($gender)) {
-            $query->where('gender', $gender);
+            $query->orWhere('gender', $gender);
         }
     }
 
@@ -74,7 +74,7 @@ class Contact extends Model
     public function scopeCategorySearch(Builder $query, $category_id): void
     {
         if (!empty($category_id)) {
-            $query->where('category_id', $category_id);
+            $query->orWhere('category_id', $category_id);
         }
     }
 
@@ -82,7 +82,7 @@ class Contact extends Model
     public function scopeDateSearch(Builder $query, $created_at): void
     {
         if (!empty($created_at)) {
-            $query->where('created_at', $created_at);
+            $query->orWhere('created_at', $created_at);
         }
     }
 
