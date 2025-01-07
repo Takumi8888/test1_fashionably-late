@@ -38,8 +38,8 @@ class ContactRequest extends FormRequest
     public function attributes(): array
     {
         return [
-            'first_name'    => '姓',
-            'last_name'     => '名',
+            'first_name'    => '名',
+            'last_name'     => '姓',
             'gender'        => '性別',
             'email'         => 'メールアドレス',
             'tel1'          => '電話番号',
