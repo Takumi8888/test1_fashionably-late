@@ -4,7 +4,7 @@
 
 <p>Dockerビルド</p>
 <ol>
-  <li>git clone https://github.com/Takumi8888/test1_fashionably-late.git</li>
+  <li>git clone <a tabindex="-1">https://github.com/Takumi8888/test1_fashionably-late.git</a></li>
   <li>cd test1_fashionably-late</li>
   <li>git remote set-url origin git@github.com:Takumi8888/test1_fashionably-late.git</li>
   <li>docker-compose up -d --build</li>
@@ -33,6 +33,6 @@
 
 <h2>URL</h2>
 <ul>
-  <li>開発環境：<a href="">http://localhost/</a></li>
-  <li>phpMyAdmin：<a href="">http://localhost:8080/</a></li>
+  <li>開発環境：<a>http://localhost/</a></li>
+  <li>phpMyAdmin：<a>http://localhost:8080/</a></li>
 </ul>
