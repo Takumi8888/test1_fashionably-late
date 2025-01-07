@@ -33,6 +33,6 @@
 
 <h2>URL</h2>
 <ul>
-  <li>開発環境：<a>http://localhost/</a></li>
-  <li>phpMyAdmin：<a>http://localhost:8080/</a></li>
+  <li>開発環境：<a href="http://localhost/">http://localhost/</a></li>
+  <li>phpMyAdmin：<a href="http://localhost:8080/">http://localhost:8080/</a></li>
 </ul>
